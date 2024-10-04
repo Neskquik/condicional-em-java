@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main { 
+
+  public static Scanner teclado;
+
+  public static void main(String[] args) {
+    teclado = new Scanner(System.in);
+
+    int n;
+
+    System.out.println("Digite o número para verificar se ele é negativo ou não: ");
+    n = teclado.nextInt();
+
+    if (n < 0) {
+      System.out.println("É negativo");
+    } else {
+      System.out.println("É positivo");
+    }
+  }
+}
